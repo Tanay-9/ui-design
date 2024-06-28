@@ -26,28 +26,33 @@ const Other = () => {
 
   return (
     <>
-      <div className="border-r border-b-0 border-l-0 border-gray-200 shadow-sidebar w-full xl:w-[25%]">
-        <div className="md:p-4 xl:p-8 flex flex-col md:gap-4 xl:gap-8">
-          <div className="flex gap-4 items-center xl:w-[360px]">
-            <div className="flex items-center p-2 xl:py-3 xl:px-6  gap-[10px] border-[0.8px] border-primary rounded-xl xl:w-44 justify-center">
+      <div className="border-r border-b-0 border-l-0 border-gray-200 shadow-sidebar lg:w-1/4 xl:w-1/4 max-w-full overflow-hidden w-full">
+        <div className="md:p-4 flex flex-col md:gap-4 xl:gap-8 justify-center lg:justify-start">
+          <div className="flex gap-2 xl:gap-4 items-center justify-center xl:w-full">
+            <div className="flex items-center p-2 xl:py-3 xl:px-6 gap-[10px] border-[0.8px] border-primary rounded-xl xl:w-42 justify-center">
               <img src={del} alt="delete job" />
-              <p className="text-primary text-xs text-[16px]">Delete job</p>
+              <p className="text-primary text-xs xl:text-[16px]">Delete job</p>
             </div>
-            <div className="flex items-center gap-[10px] p-2 xl:py-3 xl:px-6 rounded-xl bg-primary border-2 border-[rgba(254, 211, 202, 1)] xl:w-44 justify-center">
+            <div className="flex items-center gap-[10px] p-2 xl:py-3 xl:px-6 rounded-xl bg-primary border-2 border-[rgba(254, 211, 202, 1)] xl:w-42 justify-center">
               <img src={pen} alt="pen" />
-              <p className="text-xs xl:text-[16px]">Edit Job</p>
+              <p className="text-xs xl:text-[14px]">Edit Job</p>
             </div>
           </div>
-          <div className="flex flex-col gap-6 xl:w-[360px]">
+          <div className="flex flex-col gap-6 w-full overflow-hidden">
             {data.map((ele, i) => (
-              <div  key={i} className="flex justify-between items-center xl:w-[336px]">
+              <div
+                key={i}
+                className="flex justify-between items-center w-full xl:max-w-[336px]"
+              >
                 <div className="flex items-center gap-[10px]">
-                  <img src={ele.image} />
-                  <p className="text-xs xl:text-[20px] font-medium text-gray-600">
+                  <img src={ele.image} className="max-w-full" />
+                  <p className="text-xs xl:text-[16px] font-medium text-gray-600">
                     {ele.title}
                   </p>
                 </div>
-                <p className="text-xs xl:text-2xl text-gray-900">{ele.quantity}</p>
+                <p className="text-xs xl:text-[20px] text-gray-900">
+                  {ele.quantity}
+                </p>
               </div>
             ))}
           </div>
