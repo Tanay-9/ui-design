@@ -31,11 +31,11 @@ const Other = () => {
           <div className="flex gap-4 items-center xl:w-[360px]">
             <div className="flex items-center p-2 xl:py-3 xl:px-6  gap-[10px] border-[0.8px] border-primary rounded-xl xl:w-44 justify-center">
               <img src={del} alt="delete job" />
-              <p className="text-primary text-xs lg:text-[16px]">Delete job</p>
+              <p className="text-primary text-xs text-[16px]">Delete job</p>
             </div>
             <div className="flex items-center gap-[10px] p-2 xl:py-3 xl:px-6 rounded-xl bg-primary border-2 border-[rgba(254, 211, 202, 1)] xl:w-44 justify-center">
               <img src={pen} alt="pen" />
-              <p className="text-xs text-white xl:text-[16px]">Edit Job</p>
+              <p className="text-xs xl:text-[16px]">Edit Job</p>
             </div>
           </div>
           <div className="flex flex-col gap-6 xl:w-[360px]">
@@ -47,7 +47,7 @@ const Other = () => {
                     {ele.title}
                   </p>
                 </div>
-                <p className="text-xs xl:text-2xl font-bold text-gray-900">{ele.quantity}</p>
+                <p className="text-xs xl:text-2xl text-gray-900">{ele.quantity}</p>
               </div>
             ))}
           </div>
