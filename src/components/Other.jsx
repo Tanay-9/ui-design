@@ -33,7 +33,7 @@ const Other = () => {
               <img src={del} alt="delete job" />
               <p className="text-primary text-xs xl:text-[16px]">Delete job</p>
             </div>
-            <div className="flex items-center gap-[10px] p-2 xl:py-3 xl:px-6 rounded-xl bg-primary border-2 border-[rgba(254, 211, 202, 1)] xl:w-42 justify-center">
+            <div className="flex items-center gap-[10px] p-2 xl:py-3 xl:px-4 rounded-xl bg-primary border-2 border-[rgba(254, 211, 202, 1)] xl:w-42 justify-center">
               <img src={pen} alt="pen" />
               <p className="text-xs xl:text-[14px]">Edit Job</p>
             </div>
